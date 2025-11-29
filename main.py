@@ -21,6 +21,7 @@ st.subheader(f"{option} for the next {days} days in {place}")
 
 d, t = get_data(days)
 
-figure = px.line(x=d, y=t, labels={"x": "Date", "y": "Temperature(C)"})
+figure = px.line(x=d, y=t, labels={"x": "Date",
+                                   "y": "Temperature(C)"})
 st.plotly_chart(figure)
 
