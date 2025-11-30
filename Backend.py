@@ -1,7 +1,9 @@
+# Importing the libraries.
 import requests
 
 API_KEY = "aa478e4e964db3bf1310ccff5a7da01a"
 
+# Function for getting the data.
 def get_data(place, forecast_days=None):
     url = f"http://api.openweathermap.org/data/2.5/forecast?q={place}&appid={API_KEY}"
     response = requests.get(url)

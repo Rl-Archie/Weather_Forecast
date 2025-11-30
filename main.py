@@ -1,3 +1,4 @@
+# Importing the libraries
 import streamlit as st
 import plotly.express as px
 from Backend import get_data
@@ -14,7 +15,7 @@ option = st.selectbox("Select Data to view",
 st.subheader(f"{option} for the next {days} days in {place}")
 
 if place:
-
+# Try except code block
     try:
         # Get the temperature/sky data.
         filtered_data = get_data(place, days)
